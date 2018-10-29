@@ -13,9 +13,9 @@
     <hr>
     <h2>Список тестов:</h2>
     <?php if (!empty($allFiles)): 
-	?>
+    ?>
         <?php foreach ($allFiles as $file): 
-		?>
+	?>
             <?php
                 $file_data = json_decode(file_get_contents($file));
             ?>
@@ -25,10 +25,10 @@
             </div>
             <hr>
         <?php endforeach; 
-		?>
+	?>
         <?php endif; 
-		?>
+	?>
     <?php if (empty($allFiles)) echo 'Нет ни одного теста!';
-	?>	
+    ?>	
   </body>
 </html>
