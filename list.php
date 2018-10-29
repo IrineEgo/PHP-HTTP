@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('error_reporting', E_ALL);
-
     $allFiles = glob('tests/*.json');
 ?>
 
@@ -15,22 +12,23 @@ ini_set('error_reporting', E_ALL);
     <a href="admin.php"><div>&laquo; НАЗАД</div></a>
     <hr>
     <h2>Список тестов:</h2>
-    <?php if (!empty($allFiles)): ?>
-        <?php foreach ($allFiles as $file): ?>
-
+    <?php if (!empty($allFiles)): 
+	?>
+        <?php foreach ($allFiles as $file): 
+		?>
             <?php
-
-            $file_data = json_decode(file_get_contents($file));
-
+                $file_data = json_decode(file_get_contents($file));
             ?>
-
             <div>
                 <h3><?=$file_data->name?></h3>
                 <a href="test.php?number=<?php echo array_search($file, $allFiles); ?>">ПРОЙТИ ТЕСТ &raquo;</a>
             </div>
             <hr>
-        <?php endforeach; ?>
-    <?php endif; ?>
-    <?php if (empty($allFiles)) echo 'Нет ни одного теста!';?>	
+        <?php endforeach; 
+		?>
+        <?php endif; 
+		?>
+    <?php if (empty($allFiles)) echo 'Нет ни одного теста!';
+	?>	
   </body>
 </html>
