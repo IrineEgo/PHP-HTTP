@@ -26,19 +26,14 @@
     <a href="admin.php"><b>&laquo; НАЗАД</b></a><br><br>
 
     <h1>Список тестов:</h1>
-    <?php if (!empty($allFiles)): 
-	?>
-        <?php foreach ($allFiles as $file): 
-		?>
+    <?php if (!empty($allFiles)): ?>
+        <?php foreach ($allFiles as $file): ?>
             <div class="file-block">
                 <h3><?php echo str_replace('tests/', '', $file); ?></h3>
                 <a href="test.php?number=<?php echo array_search($file, $allFiles); ?>">ПРОЙТИ ТЕСТ &raquo;</a><br><br>
             </div>
-        <?php endforeach; 
-		?>
-        <?php endif; 
-		?>
-    <?php if (empty($allFiles)) echo 'Нет ни одного теста!';
-	?>	
+        <?php endforeach; ?>
+        <?php endif; ?>
+    <?php if (empty($allFiles)) echo 'Нет ни одного теста!';?>	
   </body>
 </html>
