@@ -7,18 +7,18 @@
   <head>
     <meta charset="utf-8">
     <title>Список тестов</title>
-	  <style type="text/css">
-	    h1 {
-	      text-align: center;
-	    }	  
-        a {
-          color: navy;
-          text-decoration: none;
-        }
-		.file-block {
-	      margin: 40px auto 20px;
-		  width: 40%;
-		  border-bottom: 1px solid navy;
+    <style type="text/css">
+      h1 {
+        text-align: center;
+      }	  
+      a {
+        color: navy;
+        text-decoration: none;
+       }
+       .file-block {
+	  margin: 40px auto 20px;
+	  width: 40%;
+	  border-bottom: 1px solid navy;
         }
       </style> 	
   </head>
